@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Udomseyma Sreang — Mechanical Engineering & MEP</title>
+<meta name="description" content="Portfolio and CV of Udomseyma Sreang, Mechanical Engineering student at the Institute of Technology of Cambodia.">
+<style>
+:root{
+ --bg:#080b10;--surface:#10151d;--surface2:#151c25;--text:#f5f7fb;--muted:#99a5b3;
+ --line:#26303b;--accent:#65d7ff;--accent2:#9b8cff;--shadow:0 25px 80px #0008
+}
+[data-theme="light"]{--bg:#f5f7fa;--surface:#fff;--surface2:#edf2f7;--text:#10151c;--muted:#5e6975;--line:#dce3ea;--accent:#087ea4;--accent2:#6654d9;--shadow:0 20px 60px #26364a18}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6;transition:.25s}
+body:before{content:"";position:fixed;inset:-20%;z-index:-2;background:radial-gradient(circle at 80% 5%,#4ec9ff22,transparent 28%),radial-gradient(circle at 10% 35%,#8d72ff18,transparent 25%);pointer-events:none}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+nav{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(18px)}
+.navin{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:.1em}.brand span{color:var(--accent)}.navlinks{display:flex;gap:25px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--text)}
+.toggle{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:10px;padding:8px 10px;cursor:pointer}
+.hero{min-height:calc(100vh - 74px);display:grid;grid-template-columns:1.12fr .88fr;gap:70px;align-items:center;padding:75px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-size:12px;font-weight:850;letter-spacing:.15em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px var(--accent)}
+h1{font-size:clamp(52px,8vw,94px);line-height:.9;letter-spacing:-.065em;margin:18px 0 25px}h1 .grad{background:linear-gradient(100deg,var(--accent),var(--accent2));color:transparent;background-clip:text}
+.hero p{font-size:19px;color:var(--muted);max-width:670px}.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{border:1px solid var(--line);background:var(--surface);padding:13px 18px;border-radius:12px;font-weight:750;transition:.2s}.btn:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.btn.primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+.profile-wrap{position:relative}.profile-wrap:after{content:"";position:absolute;inset:-20px;border:1px solid var(--line);border-radius:34px;transform:rotate(4deg);z-index:-1}.profile{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:18px;box-shadow:var(--shadow)}.photo{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:20px;display:block;background:var(--surface2)}
+.profile-info{padding:17px 7px 4px;display:flex;justify-content:space-between;gap:15px}.profile-info strong{font-size:17px}.muted{color:var(--muted);font-size:13px}.status{color:var(--accent);font-size:12px;font-weight:800;white-space:nowrap}
+section{padding:95px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}.section-head h2{font-size:clamp(35px,5vw,52px);line-height:1;letter-spacing:-.05em;margin:0}.section-head p{color:var(--muted);max-width:500px;margin:0}
+.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:27px}.card p{color:var(--muted)}.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}.stat{padding:22px;border:1px solid var(--line);background:var(--surface2);border-radius:16px}.stat b{font-size:25px;display:block}.stat span{color:var(--muted);font-size:13px}
+.timeline{position:relative}.timeline:before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:1px;background:var(--line)}.entry{position:relative;padding:0 0 38px 35px}.entry:before{content:"";position:absolute;left:3px;top:8px;width:11px;height:11px;border:2px solid var(--accent);background:var(--bg);border-radius:50%}.entry:last-child{padding-bottom:0}.entry .date{color:var(--accent);font-size:11px;font-weight:850;letter-spacing:.13em;text-transform:uppercase}.entry h3{margin:5px 0;font-size:22px}.entry p{color:var(--muted);margin:0;max-width:800px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:12px 15px;background:var(--surface);border:1px solid var(--line);border-radius:12px;transition:.2s}.skill:hover{border-color:var(--accent);transform:translateY(-2px)}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:28px;min-height:220px;position:relative;overflow:hidden}.project:after{content:"";position:absolute;width:170px;height:170px;border-radius:50%;right:-70px;bottom:-90px;background:var(--accent);opacity:.08}.number{font-size:12px;color:var(--accent);font-weight:850;letter-spacing:.12em}.project h3{font-size:25px;margin:12px 0 8px}.project p{color:var(--muted);margin:0}.tags{margin-top:18px;display:flex;gap:7px;flex-wrap:wrap}.tag{font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:5px 9px}
+.contact{display:grid;grid-template-columns:1fr .9fr;gap:35px;align-items:center}.contact h2{font-size:clamp(38px,5vw,62px);line-height:.98;letter-spacing:-.05em;margin:15px 0}.contact p{color:var(--muted);font-size:18px}.contact-list{display:grid;gap:10px}.contact-link{padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:14px;display:flex;justify-content:space-between;gap:15px}.contact-link span{color:var(--muted)}.contact-link:hover{border-color:var(--accent)}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:800px){.navlinks{display:none}.hero,.about-grid,.contact{grid-template-columns:1fr}.hero{padding:55px 0;gap:45px}.projects{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:14px}.profile-wrap{max-width:460px;margin:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap navin"><a class="brand" href="#">US<span>.</span></a><div class="navlinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div><button class="toggle" id="theme" aria-label="Toggle theme">☼</button></div></nav>
+
+<main>
+<section class="hero wrap">
+<div class="reveal"><div class="eyebrow"><span class="dot"></span> Mechanical Engineering · MEP</div>
+<h1>UDOMSEYMA<br><span class="grad">SREANG</span></h1>
+<p>Fourth-year Mechanical Engineering student at the Institute of Technology of Cambodia, developing practical experience in MEP engineering, construction sites, fire protection, and technical coordination.</p>
+<div class="buttons"><a class="btn primary" href="#contact">Let's Work Together ↗</a><a class="btn" href="#projects">View Projects</a></div></div>
+<div class="profile-wrap reveal"><div class="profile"><img class="photo" src="profile.jpg" alt="Udomseyma Sreang professional portrait"><div class="profile-info"><div><strong>Mechanical Engineering</strong><div class="muted">Institute of Technology of Cambodia</div></div><div class="status">● Open to opportunities</div></div></div></div>
+</section>
+
+<section id="about"><div class="wrap"><div class="section-head reveal"><h2>About me</h2><p>A simple introduction to who I am and what I’m building toward.</p></div><div class="about-grid"><div class="card reveal"><p style="font-size:18px;color:var(--text)">I am a fourth-year Mechanical Engineering student at the Institute of Technology of Cambodia. My current professional focus is MEP engineering, where I’m building practical experience through site work, system observation, safety, fire protection, coordination, and technical documentation.</p><p>I enjoy learning from real projects and turning engineering theory into practical understanding. My goal is to continue developing as an engineer while contributing to professional project teams.</p></div><div class="stats reveal"><div class="stat"><b>4th</b><span>Year of study</span></div><div class="stat"><b>MEP</b><span>Professional focus</span></div><div class="stat"><b>MT</b><span>Internship experience</span></div><div class="stat"><b>2+</b><span>Featured projects</span></div></div></div></div></section>
+
+<section id="experience"><div class="wrap"><div class="section-head reveal"><h2>Experience</h2><p>Practical exposure that connects university learning with real engineering environments.</p></div><div class="timeline">
+<div class="entry reveal"><div class="date">Internship · MT Engineering</div><h3>MEP Intern</h3><p>Gained practical exposure to MEP engineering work, site coordination, installation observation, engineering systems, safety awareness, and technical reporting.</p></div>
+<div class="entry reveal"><div class="date">Project · Outdoor Gear</div><h3>Construction Site Experience</h3><p>Observed fabrication and installation activities, coordinated plans with actual site conditions, followed safety practices, and documented engineering observations.</p></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap"><div class="section-head reveal"><h2>Technical skills</h2><p>Areas I’m developing through engineering study and practical experience.</p></div><div class="skills reveal">
+<div class="skill">Mechanical Engineering</div><div class="skill">MEP Engineering</div><div class="skill">HVAC Fundamentals</div><div class="skill">Fire Protection</div><div class="skill">NFPA Fundamentals</div><div class="skill">AutoCAD</div><div class="skill">Revit</div><div class="skill">Navisworks</div><div class="skill">Engineering Drawings</div><div class="skill">Site Coordination</div><div class="skill">Technical Documentation</div><div class="skill">Site Safety</div>
+</div></div></section>
+
+<section id="projects"><div class="wrap"><div class="section-head reveal"><h2>Selected projects</h2><p>A growing portfolio of practical engineering experience.</p></div><div class="projects">
+<article class="project reveal"><div class="number">01 · SITE EXPERIENCE</div><h3>Outdoor Gear</h3><p>Real construction-site observation focused on fabrication, installation, coordination between drawings and site conditions, electrical work, and safety awareness.</p><div class="tags"><span class="tag">MEP</span><span class="tag">Site Work</span><span class="tag">Coordination</span><span class="tag">Safety</span></div></article>
+<article class="project reveal"><div class="number">02 · SYSTEMS</div><h3>Fire Protection & NFPA</h3><p>Developing practical knowledge of fire alarm, sprinkler, standpipe, fire pump, valves, detection devices, and related MEP systems.</p><div class="tags"><span class="tag">NFPA</span><span class="tag">Fire Protection</span><span class="tag">MEP</span><span class="tag">Site Observation</span></div></article>
+</div></div></section>
+
+<section id="contact"><div class="wrap contact"><div class="reveal"><div class="eyebrow">Let's connect</div><h2>Have an opportunity?</h2><p>I’m open to engineering opportunities, project work, internships, and professional connections.</p></div><div class="contact-list reveal"><a class="contact-link" href="mailto:ahseyma135@gmail.com"><span>Email</span><b>ahseyma135@gmail.com ↗</b></a><a class="contact-link" href="tel:+85511384576"><span>Phone</span><b>011 384 576 ↗</b></a></div></div></section>
+</main>
+<footer class="wrap"><span>© 2026 Udomseyma Sreang</span><span>Mechanical Engineering · MEP</span></footer>
+
+<script>
+const root=document.documentElement, btn=document.getElementById('theme');
+const saved=localStorage.getItem('theme'); if(saved) root.dataset.theme=saved;
+btn.textContent=root.dataset.theme==='light'?'☾':'☼';
+btn.onclick=()=>{const light=root.dataset.theme!=='light';root.dataset.theme=light?'light':'dark';localStorage.setItem('theme',root.dataset.theme);btn.textContent=light?'☾':'☼'};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+</script>
+</body>
+</html>
